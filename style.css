@@ -1,0 +1,126 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:x-large;
+    background-color: black;;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    flex-grow: 1;
+    flex-basis: 200;
+    background: rgb(27, 26, 26);
+}
+#header{
+    height: 12%;/vh vw depends on dimensions of the viewing height or width of the screen being minimised or maximized/
+    width: 100%;                    
+    background: rgb(0, 0, 0);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+#logo{
+    height: 70%;
+
+}
+#logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+.texts{
+    
+    color:white;
+    display: flex;
+    
+}
+.texts:hover{
+    color: rgba(94, 176, 221, 0.938);
+}
+#contact{
+   
+    font-size: small;
+}
+.icon{
+    
+    padding: 10px;
+    border-radius: 50%;
+    color :white;
+    
+}
+.icon:hover{
+    background: lightblue;
+    color: black;
+}
+#login{
+    display: flex;
+    
+    border-radius: 50px;
+    padding: 5px;
+    color: white;
+}
+#login:hover{
+    background: lightblue;
+    color: black;
+}
+#try{
+    background: rgb(40, 40, 244);
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: white;
+}
+#try:hover{
+    background: rgb(60, 182, 219);;
+}
+
+#fakeheader{
+        height: 20%;/vh vw depends on dimensions of the viewing height or width of the screen being minimised or maximized/
+        width: 100%;                    
+        background: rgb(27, 26, 26);
+}
+#page1{
+    height: 100%;
+    width: 100%;
+    background: rgb(27, 26, 26);;
+}
+
+
+#content{
+    width: 100%;
+    height: 100%;
+    background: black;
+    background:rgb(27, 26, 26);
+    color: rgb(255, 255, 255);
+    
+}
+
+#he{
+    /* margin-top: 170px; */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 50px;
+}
+#hea{
+    justify-content: center;
+    display: flex;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+#sign{
+    background: rgb(40, 40, 244);
+    border-radius: 10px;
+    color: white;
+    
+}
+.link{
+    color: white;
+    
+}
