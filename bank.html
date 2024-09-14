@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastPay - Money Transfer</title>
+    <link rel="stylesheet" href="bank.css">
+</head>
+<body>
+    <header>
+        <h1>FastPay</h1>
+    </header>
+
+    <div class="container">
+        <!-- Payment Options Section -->
+        <div class="left-section">
+            <h2>Select Payment Method</h2>
+            <ul class="payment-options">
+                <li><button>Net Banking</button></li>
+                <li><button>Debit Card</button></li>
+                <li><button>Credit Card</button></li>
+                <li><button>NEFT</button></li>
+                <li><button>RTGS</button></li>
+                <li><button>Bill Payment</button></li>
+                <li><button>Recharge</button></li>
+            </ul>
+        </div>
+
+        <!-- Form Section -->
+        <div class="right-section">
+            <h2>Enter Bank Details</h2>
+            <form id="transfer-form">
+                <label for="account-number">Account Number</label>
+                <input type="text" id="account-number" placeholder="Enter Account Number" required>
+
+                <label for="ifsc-code">IFSC Code</label>
+                <input type="text" id="ifsc-code" placeholder="Enter IFSC Code" required>
+
+                <label for="account-holder-name">Account Holder's Name</label>
+                <input type="text" id="account-holder-name" placeholder="Enter Account Holder's Name" required>
+
+                <label for="branch-name">Branch Name</label>
+                <input type="text" id="branch-name" placeholder="Enter Branch Name" required>
+
+                <button type="submit" class="submit-btn">Proceed</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 FastPay. All rights reserved.</p>
+    </footer>
+
+    <script src="bank.js"></script>
+</body>
+</html>

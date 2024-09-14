@@ -1,0 +1,205 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4faf8;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Navbar */
+  nav {
+    background-color: #0a0a0a;
+    color: white;
+    padding: 15px 0;
+  }
+  
+  nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav h1 span {
+    color: #ffcc00;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  nav ul li a:hover {
+    color: #ffcc00;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background-color: #54595e;
+    color: white;
+    padding: 60px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 60vh;
+  }
+  
+  .hero-text {
+    flex: 1;
+  }
+  
+  .hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero a {
+    padding: 12px 30px;
+    font-size: 1rem;
+  }
+  
+  .hero-image {
+    flex: 1;
+  }
+  
+  .hero-image img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  /* Stocks Table */
+  .stock-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .stock-table th, .stock-table td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .stock-table th {
+    background-color: #101111;
+    color: white;
+  }
+  
+  .stock-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .positive {
+    color: green;
+  }
+  
+  .negative {
+    color: red;
+  }
+  
+  /* Buttons */
+  .btn {
+    display: inline-block;
+    background-color: #ffcc00;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #ff9933;
+  }
+  
+  .btn-primary {
+    background-color: #ffcc00;
+    color: #0c0c0c;
+  }
+  
+  .btn-danger {
+    background-color: #d9534f;
+    color: white;
+  }
+  
+  /* Trends Section */
+  .stock-trends {
+    margin-top: 30px;
+  }
+  
+  .stock-trends img {
+    width: 40%;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Transaction Section */
+  .trade-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .trade-input {
+    flex: 1;
+  }
+  
+  .trade-input input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .trade-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #0f0f0f;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  footer p {
+    font-size: 0.9rem;
+  }

@@ -246,16 +246,46 @@ footer {
     font-weight: 100;
 }
 #his{
+    height: 50px;
+    background-color: white;
+    color:black;
+    margin-top: 10px;
+    text-decoration: none;
+    padding-top: 19px;
+
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+#bank{
+    background-color: #3c3c3e;
+    padding-left:45%;
+    font-weight: 100;
+    color: white;
+    padding-top: 19px;
+    height: 50px;
+}
+#bank:hover{
+    color:blue;
+}
+#his{
     margin-bottom: 30px;
     background-color: #3c3c3e;
     padding-left:42%;
     font-weight: 100;
+    color: white;
     
+}
+#his:hover{
+    color:blue
 }
 .feature{
     margin-top: 90px;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size:x-large;
+    font-family:'Times New Roman', Times, serif;
 }
 

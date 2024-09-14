@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FastPay Investment</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="invest.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="container">
+      <h1>Fast<span>Pay</span> Stocks</h1>
+      <ul>
+        <li><a href="#stocks">Stocks</a></li>
+        <li><a href="#trends">Trends</a></li>
+        <li><a href="#transaction">Buy/Sell</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Master the Market with Precision</h2>
+      <p>Track, trade, and optimize your stock investments with real-time insights.</p>
+      <a href="#stocks" class="btn btn-primary">Start Trading</a>
+    </div>
+    <div class="hero-image">
+      <img src="invst.jpg" alt="Stock Trading Hero">
+    </div>
+  </section>
+
+  <!-- Stocks Table Section -->
+  <section id="stocks" class="container">
+    <h1>Top Stocks</h1>
+    <table class="stock-table">
+      <thead>
+        <tr>
+          <th>Company</th>
+          <th>Symbol</th>
+          <th>Price</th>
+          <th>Change</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Apple Inc.</td>
+          <td>AAPL</td>
+          <td>$145.09</td>
+          <td class="positive">+1.24%</td>
+          <td><button class="btn btn-secondary" onclick="buyStock('AAPL')">Buy</button> <button class="btn btn-danger" onclick="sellStock('AAPL')">Sell</button></td>
+        </tr>
+        <tr>
+          <td>Microsoft Corp.</td>
+          <td>MSFT</td>
+          <td>$299.87</td>
+          <td class="negative">-0.87%</td>
+          <td><button class="btn btn-secondary" onclick="buyStock('MSFT')">Buy</button> <button class="btn btn-danger" onclick="sellStock('MSFT')">Sell</button></td>
+        </tr>
+        <!-- Add more stocks as needed -->
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Trends Section -->
+  <section id="trends" class="container">
+    <h2>Market Trends</h2>
+    <div class="stock-trends">
+      <img src="stck.png" alt="Stock Trends">
+    </div>
+  </section>
+
+  <!-- Buy/Sell Transaction Section -->
+  <section id="transaction" class="container">
+    <h2>Execute a Trade</h2>
+    <div class="trade-box">
+      <div class="trade-input">
+        <label for="stockSymbol">Stock Symbol</label>
+        <input type="text" id="stockSymbol" placeholder="e.g., AAPL">
+      </div>
+      <div class="trade-input">
+        <label for="quantity">Quantity</label>
+        <input type="number" id="quantity" placeholder="Number of shares">
+      </div>
+      <div class="trade-buttons">
+        <button class="btn btn-primary" onclick="executeTrade('buy')">Buy</button>
+        <button class="btn btn-danger" onclick="executeTrade('sell')">Sell</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 InvestWise. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="invest.js"></script>
+</body>
+</html>
