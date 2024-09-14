@@ -17,7 +17,7 @@ html,body{
     background: rgb(27, 26, 26);
 }
 #header{
-    height: 12%;/vh vw depends on dimensions of the viewing height or width of the screen being minimised or maximized/
+    height: 12%;/*vh vw depends on dimensions of the viewing height or width of the screen being minimised or maximized*/
     width: 100%;                    
     background: rgb(0, 0, 0);
     position: fixed;
@@ -27,7 +27,7 @@ html,body{
     
 }
 #logo{
-    height: 70%;
+    height: 90%;
 
 }
 #logo img{
@@ -81,7 +81,7 @@ html,body{
 }
 
 #fakeheader{
-        height: 20%;/vh vw depends on dimensions of the viewing height or width of the screen being minimised or maximized/
+        height: 20%;/*vh vw depends on dimensions of the viewing height or width of the screen being minimised or maximized*/
         width: 100%;                    
         background: rgb(27, 26, 26);
 }
@@ -110,17 +110,27 @@ html,body{
 }
 #hea{
     justify-content: center;
-    display: flex;
+    /* display: flex; */
     margin-left: 80px;
     margin-right: 80px;
 }
-#sign{
-    background: rgb(40, 40, 244);
-    border-radius: 10px;
-    color: white;
-    
-}
 .link{
     color: white;
+    background-color: rgb(27, 84, 228);
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: background-color 0.3s ease-in-out;
+    &:hover{
+        background-color: rgb(156, 161, 166);
+    }
+
+}
+.up{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
     
 }
