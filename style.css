@@ -42,7 +42,7 @@ html,body{
     
 }
 .texts:hover{
-    color: rgba(94, 176, 221, 0.938);
+    color: rgba(84, 161, 203, 0.938);
 }
 #contact{
    
@@ -288,4 +288,12 @@ a{
     font-size:x-large;
     font-family:'Times New Roman', Times, serif;
 }
-
+.last{
+    margin-top: 30px;
+    height:100px;
+    background-color: #3c3c3e;
+    font-weight: 400;
+    padding-top: 53px;
+    opacity: 0.3;
+    padding-left: 500px;
+}
