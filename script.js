@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Toggle chatbox visibility
     setTimeout(() => {
         chatbox.style.display = 'flex';
-    }, 1000); // Show chatbox after 1 second
+    }, 2000); // Show chatbox after 1 second
 
     chatboxClose.addEventListener('click', function() {
         chatbox.style.display = 'none';
