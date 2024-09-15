@@ -1,5 +1,9 @@
 # Fast-Pay
 
+Developed by Lakshya Tripathi  github-lakshya1410
+             Pushkar Gupta     github-pushkargupta75
+
+
 Learn More About FastPay
 
 Welcome to FastPay, your ultimate platform for managing all your financial needs in one place. Discover the robust features designed to simplify your financial life:
@@ -16,10 +20,11 @@ Grow your wealth with our diverse investment options. FastPay offers a range of 
 4. Refer and Earn:
 Take advantage of our refer and earn program. Invite friends and family to join FastPay and earn rewards for each successful referral. Share the benefits and watch your earnings grow!
 
-5. Transaction History:
+6. Transaction History:
 Stay on top of your finances with detailed transaction history. Easily review past transactions, track spending, and manage your budget with our comprehensive history feature.
 
-6. Check Bank Balance:
+7. Check Bank Balance:
 Quickly and securely check your bank balance directly from FastPay. Stay informed about your account status and manage your finances with real-time updates.
 
 At FastPay, we are dedicated to providing a seamless, secure, and user-friendly financial management experience. Explore all our features and see how FastPay can enhance your financial journey today.
+
