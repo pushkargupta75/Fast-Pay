@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Balance - FastPay</title>
+    <link rel="stylesheet" href="check.css">
+</head>
+<body>
+    <div class="container">
+        <h1>FastPay Payments Bank</h1>
+        <h2>Check Your Account Balance</h2>
+
+        <!-- PIN Input Form -->
+        <form id="balance-form" onsubmit="checkBalance(event)">
+            <div class="input-group">
+                <label for="pin">Enter your 4-digit PIN:</label>
+                <input type="password" id="pin" maxlength="4" required>
+                <input type="checkbox" id="show-pin" onclick="togglePIN()"> Show PIN
+            </div>
+            <button type="submit" class="btn">Check Balance</button>
+            <p id="error-message"></p>
+        </form>
+
+        <!-- Balance Display -->
+        <div id="balance-section" class="hidden">
+            <h3>Your total account balance is:</h3>
+            <p id="balance-amount">$0.00</p>
+            <button class="btn" onclick="resetForm()">Check Another Account</button>
+        </div>
+    </div>
+
+    <script src="check.js"></script>
+</body>
+</html>
