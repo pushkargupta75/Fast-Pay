@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction History - Fast Pay</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Transaction History of FastPay</h1>
+
+        <!-- Search Bar -->
+        <input type="text" id="search-bar" placeholder="Search transactions by ID, Name..." oninput="filterTransactions()">
+
+        <!-- Filter Options -->
+        <div class="filters">
+            <label>Status:</label>
+            <select id="status-filter" onchange="filterTransactions()">
+                <option value="all">All</option>
+                <option value="completed">Completed</option>
+                <option value="pending">Pending</option>
+                <option value="failed">Failed</option>
+            </select>
+
+            <label>Payment Method:</label>
+            <select id="method-filter" onchange="filterTransactions()">
+                <option value="all">All</option>
+                <option value="credit-card">Credit Card</option>
+                <option value="debit-card">Debit Card</option>
+                <option value="bank-transfer">Bank Transfer</option>
+                <option value="wallet">Digital Wallet</option>
+            </select>
+
+            <label>Date:</label>
+            <input type="date" id="date-filter" onchange="filterTransactions()">
+
+            <label>Amount (Min-Max):</label>
+            <input type="number" id="min-amount" placeholder="Min" onchange="filterTransactions()">
+            <input type="number" id="max-amount" placeholder="Max" onchange="filterTransactions()">
+
+            <label>Payment Type:</label>
+            <select id="type-filter" onchange="filterTransactions()">
+                <option value="all">All</option>
+                <option value="personal">Personal</option>
+                <option value="business">Business</option>
+                <option value="subscription">Subscription</option>
+            </select>
+        </div>
+
+        <!-- Transaction History -->
+        <div id="transaction-history">
+            <h2>Previous Transactions</h2>
+            <div class="month">
+                <h3>September 2024</h3>
+                <div class="transaction" data-status="completed" data-method="credit-card" data-date="2024-09-05" data-amount="150" data-type="business">
+                    <p><strong>ID:</strong> 12345 | <strong>Date:</strong> 2024-09-05 | <strong>Amount:</strong> ₹1500 | <strong>Method:</strong> Credit Card | <strong>Status:</strong> Completed</p>
+                </div>
+                <div class="transaction" data-status="pending" data-method="bank-transfer" data-date="2024-09-10" data-amount="500" data-type="personal">
+                    <p><strong>ID:</strong> 12346 | <strong>Date:</strong> 2024-09-10 | <strong>Amount:</strong> ₹5000 | <strong>Method:</strong> Bank Transfer | <strong>Status:</strong> Pending</p>
+                </div>
+            </div>
+            <div class="month">
+                <h3>August 2024</h3>
+                <div class="transaction" data-status="failed" data-method="wallet" data-date="2024-08-15" data-amount="200" data-type="subscription">
+                    <p><strong>ID:</strong> 12347 | <strong>Date:</strong> 2024-08-15 | <strong>Amount:</strong> ₹2000 | <strong>Method:</strong> Digital Wallet | <strong>Status:</strong> Failed</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
