@@ -290,13 +290,14 @@ a{
 }
 .last{
     margin-top: 30px;
-    height:100px;
+    height:150px;
     background-color: #3c3c3e;
     font-weight: 400;
     padding-top: 53px;
     opacity: 0.3;
     padding-left: 500px;
 }
+
 .chatbox {
     position: fixed;
     bottom: 20px;
@@ -389,4 +390,5 @@ a{
 #chatbox-send:hover {
     background-color: #596065;
 }
+
 
