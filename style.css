@@ -307,11 +307,11 @@ a{
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     display: none;
-    flex-direction: column;
+    flex-direction:column;
 }
 
 .chatbox-header {
-    background: #3498db;
+    background: #3c3c3e;
     color: #fff;
     padding: 10px;
     border-top-left-radius: 8px;
@@ -319,6 +319,7 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size:25px;
 }
 
 .chatbox-header h3 {
@@ -351,10 +352,11 @@ a{
 .message.received {
     background: #f1f1f1;
     align-self: flex-start;
+    color: black;
 }
 
 .message.sent {
-    background: #3498db;
+    background: #3c3c3e;
     color: #fff;
     align-self: flex-end;
 }
@@ -369,7 +371,7 @@ a{
 }
 
 #chatbox-send {
-    background-color: #3498db;
+    background-color: #3c3c3e;
     color: #fff;
     border: none;
     padding: 10px;
@@ -385,6 +387,6 @@ a{
 }
 
 #chatbox-send:hover {
-    background-color: #2980b9;
+    background-color: #596065;
 }
 
